@@ -1,8 +1,17 @@
 @charset "UTF-8";
+.nav-link {
+  color: black !important;
+}
+
+.nav-link.active,
+.nav-link.active:hover {
+  color: #fa5959 !important;
+}
+
 .requadre-blau-dreta {
+  height: 70% !important;
   position: relative;
   background-color: #5265e1;
-  height: 100%;
   width: 100%;
 }
 

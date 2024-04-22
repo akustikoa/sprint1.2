@@ -1,10 +1,19 @@
 $primary: #5265e1;
 $secondary: #fa5959;
 
+.nav-link {
+  color: black !important;
+}
+
+.nav-link.active,
+.nav-link.active:hover {
+  color: $secondary !important;
+}
+
 .requadre-blau-dreta {
+  height: 70% !important;
   position: relative;
   background-color: #5265e1;
-  height: 100%;
   width: 100%;
 }
 .requadre-blau-esquerra {
