@@ -1,25 +1,18 @@
 @charset "UTF-8";
-.nav-link {
-  color: black !important;
-}
-
-.nav-link.active,
-.nav-link.active:hover {
-  color: #fa5959 !important;
-}
-
 .requadre-blau-dreta {
-  height: 70% !important;
-  position: relative;
-  background-color: #5265e1;
-  width: 100%;
+  z-index: -1;
+  height: 70%;
+  width: 150%;
+  bottom: 0;
+  left: 150px;
 }
 
 .requadre-blau-esquerra {
-  position: relative;
-  background-color: #5265e1;
+  z-index: -1;
   height: 100%;
-  width: 100%;
+  width: 150%;
+  bottom: -80px;
+  right: 80px;
 }
 
 /*!
