@@ -2,7 +2,7 @@
 .requadre-blau-dreta {
   z-index: -1;
   height: 70%;
-  width: 150%;
+  width: 100%;
   bottom: 0;
   left: 150px;
 }
@@ -10,9 +10,9 @@
 .requadre-blau-esquerra {
   z-index: -1;
   height: 100%;
-  width: 150%;
+  width: 100%;
   bottom: -80px;
-  right: 80px;
+  right: 120px;
 }
 
 /*!
