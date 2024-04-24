@@ -4,7 +4,7 @@ $secondary: #fa5959;
 .requadre-blau-dreta {
   z-index: -1;
   height: 70%;
-  width: 100%;
+  width: 90%;
   bottom: 0;
   left: 150px;
 }
@@ -15,6 +15,29 @@ $secondary: #fa5959;
   width: 100%;
   bottom: -80px;
   right: 120px;
+}
+.linia-vermella {
+  border-bottom-color: #fa5959;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
 }
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
