@@ -324,21 +324,36 @@
       </div>
     </div>
     <footer>
-      <div class="row text-center">
-        <div class="col-2 mx-auto">
-          <form>
-            <div class="mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-              <button type="submit" class="btn btn-primary">Contact us</button>
-            </div>
-          </form>
+      <div class="container-fluid text-bg-primary mt-5">
+        <div class="row mx-0 p-3 my-2 justify-content-center">
+          <div class="col-12 col-md-6 text-center py-3">
+            <span class="text-white">35,000+ ALREADY JOINED</span>
+            <h2 class="text-white fw-bolder">
+              Stay up-to-date with what we're doing
+            </h2>
+          </div>
         </div>
-        <div class="col-2 mx-auto"></div>
+        <form
+          class="row mx-0 bg-primary justify-content-center g-2 pb-5 needs-validation"
+          no
+          validate
+        >
+          <div class="col-11 col-md-6 position-relative ms-md-auto">
+            <input
+              id="validationCustomEmail"
+              type="email"
+              class="form-control"
+              placeholder="Enter your Email adress"
+              required
+            />
+            <div class="invalid-feedback">Whoops, make sure it's an email</div>
+          </div>
+          <div class="col-11 col-md-3 d-grid d-md-block">
+            <button type="submit" class="btn btn-submit text-white">
+              Contact us
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
 
