@@ -5,10 +5,28 @@ $nav-link-color: black;
 $accordion-icon-color: #5265e1;
 $accordion-icon-active-color: #fa5959;
 $nav-link-text-active-color: black;
+$body-bg: white;
 
 html,
 body {
   overflow-x: hidden;
+}
+
+.btn-primary:hover {
+  color: $primary !important;
+  background-color: white !important;
+  border-color: $primary !important;
+}
+
+.btn-secondary:hover {
+  color: $secondary !important;
+  background-color: white !important;
+  border-color: $secondary !important;
+}
+.btn_gris:hover {
+  color: gray !important;
+  background-color: white !important;
+  border-color: gray !important;
 }
 
 //ACTIUS

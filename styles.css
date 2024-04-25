@@ -4,6 +4,24 @@ body {
   overflow-x: hidden;
 }
 
+.btn-primary:hover {
+  color: #5265e1 !important;
+  background-color: white !important;
+  border-color: #5265e1 !important;
+}
+
+.btn-secondary:hover {
+  color: #fa5959 !important;
+  background-color: white !important;
+  border-color: #fa5959 !important;
+}
+
+.btn_gris:hover {
+  color: gray !important;
+  background-color: white !important;
+  border-color: gray !important;
+}
+
 .social-icon:hover {
   filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
 }
@@ -143,7 +161,7 @@ body {
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg: #fff;
+  --bs-body-bg: white;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -2534,10 +2552,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 1px white, 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
+  box-shadow: 0 0 0 1px white, 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
