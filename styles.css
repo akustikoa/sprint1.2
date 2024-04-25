@@ -1,8 +1,22 @@
 @charset "UTF-8";
+html,
+body {
+  overflow-x: hidden;
+}
+
+.social-icon:hover {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
+}
+
+.nav-link:hover,
+.accordion-button:hover {
+  color: #fa5959 !important;
+}
+
 .requadre-blau-dreta {
   z-index: -1;
   height: 70%;
-  width: 90%;
+  width: 150%;
   bottom: 0;
   left: 150px;
 }
@@ -10,11 +24,44 @@
 .requadre-blau-esquerra {
   z-index: -1;
   height: 100%;
-  width: 100%;
+  width: 150%;
   bottom: -80px;
   right: 120px;
 }
 
+.hfoto {
+  height: 230px;
+}
+
+@media (max-width: 767.98px) {
+  #card_opera {
+    margin-top: 30px !important;
+  }
+  #card_chrome {
+    margin-bottom: 20px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  #card_firefox {
+    margin-top: -20px !important;
+  }
+}
+@media (max-width: 1399.98px) {
+  #card_firefox {
+    margin-top: 10px;
+  }
+  #card_opera {
+    margin-top: 105px;
+  }
+}
+@media (min-width: 1399.98px) {
+  #card_firefox {
+    margin-top: 10px;
+  }
+  #card_opera {
+    margin-top: 105px;
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -112,8 +159,8 @@
   --bs-link-color: #5265e1;
   --bs-link-color-rgb: 82, 101, 225;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #4251b4;
-  --bs-link-hover-color-rgb: 66, 81, 180;
+  --bs-link-hover-color: #fa5959;
+  --bs-link-hover-color-rgb: 250, 89, 89;
   --bs-code-color: #d63384;
   --bs-highlight-color: #212529;
   --bs-highlight-bg: #fff3cd;
@@ -3791,7 +3838,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: var(--bs-link-color);
+  --bs-nav-link-color: black;
   --bs-nav-link-hover-color: var(--bs-link-hover-color);
   --bs-nav-link-disabled-color: var(--bs-secondary-color);
   display: flex;
@@ -4548,11 +4595,11 @@ textarea.form-control-lg {
   --bs-accordion-btn-padding-y: 1rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
-  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23212529' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%235265e1' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
   --bs-accordion-btn-icon-width: 1.25rem;
   --bs-accordion-btn-icon-transform: rotate(-180deg);
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
-  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2321285a' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fa5959' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(82, 101, 225, 0.25);
   --bs-accordion-body-padding-x: 1.25rem;
   --bs-accordion-body-padding-y: 1rem;

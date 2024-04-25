@@ -7,53 +7,60 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="overflow-x-hidden">
-    <div class="container">
-      <div class="row align-items-center mt-4 me-5">
-        <div class="column mb-5">
-          <nav class="navbar navbar-expand-md bg-body-primary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"
-                ><img src="img/logo-bookmark.svg" alt="logo-bookmark"
-              /></a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 my-3">
-                  <!-- me per ms per desplaçar a la dreta -->
-                  <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">FEATURES</a>
-                  </li>
-                  <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">PRICING</a>
-                  </li>
-                  <li class="nav-item mx-3">
-                    <a class="nav-link" href="#">CONTACT</a>
-                  </li>
-                  <li class="nav-item mx-3">
-                    <button type="button" class="btn btn-secondary text-white">
-                      LOGIN
-                    </button>
-                  </li>
-                </ul>
+    <header>
+      <div class="container">
+        <div class="row align-items-center mt-4 me-5">
+          <div class="column mb-5">
+            <nav class="navbar navbar-expand-md bg-body-primary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"
+                  ><img src="img/logo-bookmark.svg" alt="logo-bookmark"
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 my-3">
+                    <!-- me per ms per desplaçar a la dreta -->
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#">FEATURES</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#">PRICING</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                      <button
+                        type="button"
+                        class="btn btn-secondary text-white"
+                      >
+                        LOGIN
+                      </button>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-
+    </header>
     <div class="container">
       <div class="row align-items-center mt-5 p-3">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+        <div class="col-12 col-md-6 mb-5">
           <h1 class="fw-bold display-5">A simple Bookmark Manager</h1>
           <p class="text-body mt-5 mb-4">
             A clean and simple interface to organize your favourite<br />
@@ -67,7 +74,7 @@
             Get it on Firefox
           </button>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 position-relative">
+        <div class="col-12 col-md-6 position-relative">
           <img
             src="./img/illustration-hero.svg"
             class="img-fluid"
@@ -79,6 +86,7 @@
         </div>
       </div>
     </div>
+
     <!-- FEATURES -->
     <div class="container">
       <div class="row text-center">
@@ -91,21 +99,20 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row h-100">
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-5">
-          <ul class="nav nav-underline justify-content-center">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-decoration-red px-lg-4 py-2"
-                aria-current="page"
-                href="#"
+          <ul
+            class="nav nav-underline justify-content-center flex-column align-items-center flex-md-row"
+          >
+            <li class="nav-item border-bottom border-gray mb-0">
+              <a class="nav-link px-lg-4 py-2" aria-current="page" href="#"
                 >Simple Bookmarking</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item border-bottom border-gray mb-0">
               <a class="nav-link px-lg-4 py-2" href="#">Speedy Searching</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item border-bottom border-gray mb-0">
               <a class="nav-link px-lg-4 py-2" href="#">Easy Sharing</a>
             </li>
           </ul>
@@ -135,9 +142,11 @@
         </div>
       </div>
     </div>
-    <div class="container my-5">
+    <div class="container my-2">
       <div class="row text-center">
-        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5 p-5 mx-auto">
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5 p-5 mx-auto"
+        >
           <h2 class="fw-bold">Download the extension</h2>
           <p class="text-center">
             <br />
@@ -147,11 +156,15 @@
         </div>
 
         <div class="row">
-          <div class="col d-flex justify-content-center align-self-start mb-5">
-            <div class="card shadow mx-auto border-0" style="width: 15rem">
+          <div class="col justify-content-center align-self-start mb-4">
+            <div
+              class="card shadow mx-auto border-0"
+              style="width: 15rem"
+              id="card_chrome"
+            >
               <img
                 src="./img/logo-chrome.svg"
-                class="card-img-top p-5"
+                class="card-img-top p-5 hfoto"
                 alt="imagen_chrome"
               />
               <div class="card-body">
@@ -161,11 +174,15 @@
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-center align-self-center">
-            <div class="card shadow mx-auto border-0" style="width: 15rem">
+          <div class="col justify-content-center align-self-center">
+            <div
+              class="card shadow mx-auto border-0"
+              style="width: 15rem"
+              id="card_firefox"
+            >
               <img
                 src="./img/logo-firefox.svg"
-                class="card-img-top p-5"
+                class="card-img-top p-5 hfoto"
                 alt="imagen_firefox"
               />
               <div class="card-body">
@@ -175,11 +192,15 @@
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-center align-self-end mb-3">
-            <div class="card shadow mx-auto border-0 mt-5" style="width: 15rem">
+          <div class="col justify-content-center align-self-end">
+            <div
+              class="card shadow mx-auto border-0"
+              style="width: 15rem"
+              id="card_opera"
+            >
               <img
                 src="./img/logo-opera.svg"
-                class="card-img-top p-5"
+                class="card-img-top p-5 hfoto"
                 alt="imagen_opera"
               />
               <div class="card-body">
@@ -194,7 +215,7 @@
     </div>
     <!-- FAQs -->
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center mt-5">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-5 mb-3 p-3 mx-auto">
           <h2 class="fw-bold text-center">Frequently Asked Questions</h2>
           <br />
@@ -206,7 +227,10 @@
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 mx-auto">
-          <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div
+            class="accordion accordion-flush accordion-button-color"
+            id="accordionFlushExample"
+          >
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button
@@ -226,9 +250,10 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the first item's accordion body.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime vitae consequuntur, ullam id error quaerat illo
+                  perferendis dignissimos similique magni. Tenetur molestias
+                  repellendus veritatis.
                 </div>
               </div>
             </div>
@@ -251,10 +276,10 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the second item's accordion body. Let's imagine this being
-                  filled with some actual content.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime vitae consequuntur, ullam id error quaerat illo
+                  perferendis dignissimos similique magni. Tenetur molestias
+                  repellendus veritatis.
                 </div>
               </div>
             </div>
@@ -277,13 +302,10 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the third item's accordion body. Nothing more exciting
-                  happening here in terms of content, but just filling up the
-                  space to make it look, at least at first glance, a bit more
-                  representative of how this would look in a real-world
-                  application.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime vitae consequuntur, ullam id error quaerat illo
+                  perferendis dignissimos similique magni. Tenetur molestias
+                  repellendus veritatis.
                 </div>
               </div>
             </div>
@@ -306,9 +328,10 @@
                 data-bs-parent="#accordionFlushExample"
               >
                 <div class="accordion-body">
-                  Placeholder content for this accordion, which is intended to
-                  demonstrate the <code>.accordion-flush</code> class. This is
-                  the first item's accordion body.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime vitae consequuntur, ullam id error quaerat illo
+                  perferendis dignissimos similique magni. Tenetur molestias
+                  repellendus veritatis.
                 </div>
               </div>
             </div>
@@ -338,22 +361,83 @@
           no
           validate
         >
-          <div class="col-11 col-md-6 position-relative ms-md-auto">
+          <div class="col-12 col-md-6 position-relative ms-md-auto">
             <input
               id="validationCustomEmail"
               type="email"
               class="form-control"
-              placeholder="Enter your Email adress"
+              placeholder="Enter your Email address"
               required
             />
             <div class="invalid-feedback">Whoops, make sure it's an email</div>
           </div>
-          <div class="col-11 col-md-3 d-grid d-md-block">
-            <button type="submit" class="btn btn-submit text-white">
+          <div class="col-12 col-md-3 d-grid d-md-block">
+            <button
+              type="submit"
+              class="btn btn-submit btn-secondary text-white"
+            >
               Contact us
             </button>
           </div>
         </form>
+      </div>
+      <div class="container-fluid bg-dark" id="footer">
+        <div class="container-xl pt-4 pt-lg-2 pb-4 pb-lg-2">
+          <ul
+            class="nav flex-column flex-lg-row align-items-center text-uppercase text-white py-3 ms-lg-5"
+          >
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./img/logo-bookmark-negativo.svg"
+                  alt="logo Bookmark"
+                  height="20"
+                  class="mb-lg-1"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white mt-4 mt-lg-0 ms-lg-5"
+                href="#features"
+                >features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white mt-3 mb-3 mt-lg-0 mb-lg-0"
+                href="#pricing"
+                >pricing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mb-4 mb-lg-0" href="#footer"
+                >contact</a
+              >
+            </li>
+            <li class="nav-item mt-2 mt-lg-0 mb-lg-2 ms-lg-auto me-lg-5">
+              <a
+                class="nav-link d-inline ps-0 pe-3 pe-lg-2"
+                href="https://www.facebook.com/"
+                ><img
+                  src="./img/icon-facebook.svg"
+                  alt="facebook-icon"
+                  height="19"
+                  class="social-icon"
+                  target="”_blank”"
+              /></a>
+              <a
+                class="nav-link d-inline ps-3 pe-lg-2 pe-0"
+                href="https://www.twitter.com/"
+                ><img
+                  src="./img/icon-twitter.svg"
+                  alt="twitter-icon"
+                  height="18"
+                  class="social-icon"
+                  target="”_blank”"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
 
