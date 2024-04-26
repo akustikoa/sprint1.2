@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+.card-body img {
+  margin-bottom: 20px;
+}
+
 .btn-primary:hover {
   color: $primary !important;
   background-color: white !important;

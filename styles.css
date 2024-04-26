@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.card-body img {
+  margin-bottom: 20px;
+}
+
 .btn-primary:hover {
   color: #5265e1 !important;
   background-color: white !important;

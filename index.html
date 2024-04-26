@@ -187,9 +187,10 @@
                 class="card-img-top p-5 hfoto"
                 alt="imagen_firefox"
               />
-              <div class="card-body">
+              <div class="card-body overflow-x-hidden">
                 <h5 class="card-title">Add to Firefox</h5>
                 <p class="card-text">Minimum version 5.5</p>
+                <img src="./img/bg-dots.svg" />
                 <a href="#" class="btn btn-primary">Add & Install Extension</a>
               </div>
             </div>
@@ -205,9 +206,10 @@
                 class="card-img-top p-5 hfoto"
                 alt="imagen_opera"
               />
-              <div class="card-body">
+              <div class="card-body overflow-x-hidden">
                 <h5 class="card-title">Add to Opera</h5>
                 <p class="card-text">Minimum version 4.6</p>
+                <img src="./img/bg-dots.svg" />
                 <a href="#" class="btn btn-primary">Add & Install Extension</a>
               </div>
             </div>
@@ -348,6 +350,7 @@
         </div>
       </div>
     </div>
+    <!-- footer -->
     <footer>
       <div class="container-fluid text-bg-primary mt-5">
         <div class="row mx-0 p-3 my-2 justify-content-center">
@@ -369,6 +372,7 @@
               type="email"
               class="form-control"
               placeholder="Enter your Email address"
+              required
             />
             <div class="invalid-tooltip">Whoops, make sure it's an email</div>
           </div>
@@ -382,24 +386,57 @@
           </div>
         </form>
         <script>
-          // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+          // Funció per validar una adreça d'email amb una expressió regular
+          function validateEmail(email) {
+            const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regexEmail.test(email);
+          }
+
+          // Script per deshabilitar l'enviament de formularis si hi ha camps no vàlids
           (function () {
             "use strict";
 
-            // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+            // Obtener tots els formularis als quals volem aplicar estils de validació personalitzats
             var forms = document.querySelectorAll(".needs-validation");
 
-            // Bucle sobre ellos y evitar el envío
+            // Bucle sobre ells i evitar l'enviament
             Array.prototype.slice.call(forms).forEach(function (form) {
               form.addEventListener(
                 "submit",
                 function (event) {
+                  // Eliminar el contorn verd i el símbol de validació dels camps d'entrada
+                  var inputs = form.querySelectorAll("input");
+                  inputs.forEach(function (input) {
+                    input.classList.remove("is-valid");
+                  });
+
                   if (!form.checkValidity()) {
                     event.preventDefault();
                     event.stopPropagation();
+                  } else {
+                    // Validar l'adreça d'email abans de permetre l'enviament
+                    var emailInput = form.querySelector('input[type="email"]');
+                    if (emailInput && !validateEmail(emailInput.value)) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      // Mostrar missatge d'error amb format invalid-tooltip
+                      var emailError = emailInput.nextElementSibling;
+                      emailError.classList.add("invalid-tooltip");
+                      emailError.style.display = "block";
+                      emailError.innerText = "L'adreça d'email no és vàlida.";
+                    } else {
+                      // Afegir el contorn verd només si tots els camps són vàlids
+                      var validInputs = form.querySelectorAll("input:valid");
+                      validInputs.forEach(function (input) {
+                        input.classList.add("is-valid");
+                      });
+                    }
                   }
 
-                  form.classList.add("was-validated");
+                  // Afegir el contorn verd només si tots els camps són vàlids
+                  if (form.checkValidity()) {
+                    form.classList.add("was-validated");
+                  }
                 },
                 false
               );
