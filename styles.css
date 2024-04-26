@@ -4,10 +4,6 @@ body {
   overflow-x: hidden;
 }
 
-.card-body img {
-  margin-bottom: 20px;
-}
-
 .btn-primary:hover {
   color: #5265e1 !important;
   background-color: white !important;
@@ -26,13 +22,23 @@ body {
   border-color: gray !important;
 }
 
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  border-bottom-color: red !important;
+}
+
 .social-icon:hover {
   filter: brightness(0) saturate(100%) invert(42%) sepia(46%) saturate(812%) hue-rotate(314deg) brightness(107%) contrast(96%);
 }
 
 .nav-link:hover,
-.accordion-button:hover {
+.accordion-button:hover,
+.nav-item:hover {
   color: #fa5959 !important;
+}
+
+.card-body img {
+  margin-bottom: 20px;
 }
 
 .requadre-blau-dreta {

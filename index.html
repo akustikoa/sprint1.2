@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercici1.2-bootstrap</title>
+    <title>Exercici1.2-landscape amb Bootstrap&SASS</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="overflow-x-hidden">
@@ -106,27 +106,107 @@
         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-5">
           <ul
             class="nav nav-underline justify-content-center flex-column align-items-center flex-md-row"
+            id="myTab"
+            role="tablist"
           >
-            <li class="nav-item border-bottom border-gray mb-0">
-              <a class="nav-link px-lg-4 py-2" aria-current="page" href="#"
-                >Simple Bookmarking</a
+            <li
+              class="nav-item border-bottom border-gray mb-0"
+              role="presentation"
+            >
+              <button
+                class="nav-link active px-lg-4 py-2"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
               >
+                Simple Bookmarking
+              </button>
             </li>
-            <li class="nav-item border-bottom border-gray mb-0">
-              <a class="nav-link px-lg-4 py-2" href="#">Speedy Searching</a>
+
+            <li
+              class="nav-item border-bottom border-gray mb-0"
+              role="presentation"
+            >
+              <button
+                class="nav-link px-lg-4 py-2"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                Speedy Searching
+              </button>
             </li>
-            <li class="nav-item border-bottom border-gray mb-0">
-              <a class="nav-link px-lg-4 py-2" href="#">Easy Sharing</a>
+
+            <li
+              class="nav-item border-bottom border-gray mb-0"
+              role="presentation"
+            >
+              <button
+                class="nav-link px-lg-4 py-2"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                Easy Sharing
+              </button>
             </li>
           </ul>
         </div>
       </div>
-      <div class="row align-items-center mt-5 p-3">
+      <div class="row tab-content mt-5 p-3" id="myTabContent">
         <div
-          class="col-sm-12 col-md-6 col-lg-6 col-xl-6 position-relative mb-5"
+          class="tab-pane fade show active col-sm-12 col-md-6 col-lg-6 col-xl-6 position-relative mb-5"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
         >
           <img
             src="./img/illustration-features-tab-1.svg"
+            class="img-fluid"
+            alt="Image"
+          />
+          <div
+            class="requadre-blau-esquerra rounded-end-pill bg-primary position-absolute"
+          ></div>
+        </div>
+        <div
+          class="tab-pane fade col-sm-12 col-md-6 col-lg-6 col-xl-6 position-relative mb-5"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <img
+            src="./img/illustration-features-tab-2.svg"
+            class="img-fluid"
+            alt="Image"
+          />
+          <div
+            class="requadre-blau-esquerra rounded-end-pill bg-primary position-absolute"
+          ></div>
+        </div>
+        <div
+          class="tab-pane fade col-sm-12 col-md-6 col-lg-6 col-xl-6 position-relative mb-5"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          <img
+            src="./img/illustration-features-tab-3.svg"
             class="img-fluid"
             alt="Image"
           />
@@ -327,7 +407,7 @@
                 </button>
               </h2>
               <div
-                id="flush-collapseOne"
+                id="flush-collapsefour"
                 class="accordion-collapse collapse"
                 data-bs-parent="#accordionFlushExample"
               >
